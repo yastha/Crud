@@ -15,14 +15,141 @@
   <body>
     <div class="container">
       <hr>
-      <button type="button" class="btn btn-primary pull-right glyphicon glyphicon-plus"></button>
+      <button type="button" class="btn btn-primary pull-right glyphicon glyphicon-plus" data-toggle="modal" data-target="#myModalEdit"></button>
       <h2>Student Record </h2>
-      <span class="clearfix"></span>-->
-      <hr>
+      <span class="clearfix"></span>
 
-    </div>
+<table class="table table-striped">
+    <thead>
+      <tr>
+        <th>Index</th>
+        <th>Username</th>
+        <th>Email</th>
+        <th>Action<th>
+      </tr>
+      </thead>
+      <tbody>
+       <tr>
+        <td>1.</td>
+        <td>Astha</td>
+        <td>yastha.as@gmail.com</td>
+        <td>
+        <button type="button" class="btn btn-success glyphicon glyphicon-pencil" data-toggle="modal" data-target="#myModal">
+        </button>
+      
+       <button type="button" class="btn btn-danger glyphicon glyphicon-trash" data-toggle="modal" data-target="#myModalDelete"></button>
+        </td>
+        
+      </tr>
+      
+    </tbody>
+  </table>
+</div>
 
-    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+
+  <!-- Modal -->
+  <div class="modal fade" id="myModal" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">Edit Registration</h4>
+        </div>
+        <div class="modal-body">
+
+              <form class="form-horizontal" role="form">
+                  <div class="form-group">
+                    <label class="control-label col-sm-2">Username:</label>
+                  <div class="col-sm-10">
+                    <input type="text" class="form-control">
+                  </div>
+                  </div>
+              <form class="form-horizontal" role="form">
+                  <div class="form-group">
+                      <label class="control-label col-sm-2">Email</label>
+                  <div class="col-sm-10">
+                      <input type="email" class="form-control">
+                  </div>
+                  </div>
+          
+          <div class="form-group">        
+            <div class="col-sm-offset-2 col-sm-10">
+              <button type="submit" class="btn btn-default">Save</button>
+            </div>
+          </div>
+        </form>
+         <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+        </div>
+      
+        </div>
+        </div>
+        </div>
+      <!-- Modal -->
+       <div class="modal fade" id="myModalEdit" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">New Registration</h4>
+        </div>
+        <div class="modal-body">
+
+              <form class="form-horizontal" role="form">
+                  <div class="form-group">
+                    <label class="control-label col-sm-2">Username:</label>
+                  <div class="col-sm-10">
+                    <input type="text" class="form-control">
+                  </div>
+                  </div>
+              <form class="form-horizontal" role="form">
+                  <div class="form-group">
+                      <label class="control-label col-sm-2">Email</label>
+                  <div class="col-sm-10">
+                      <input type="email" class="form-control">
+                  </div>
+                  </div>
+          
+          <div class="form-group">        
+            <div class="col-sm-offset-2 col-sm-10">
+              <button type="submit" class="btn btn-default">Save</button>
+            </div>
+          </div>
+        </form>
+         <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+        </div>
+      </div>
+        </div>
+        </div>
+        <!-- Modal -->
+       <div class="modal fade" id="myModalDelete" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">Are You Sure ?</h4>
+        </div>
+        <strong style="color:red;"> You are going to delete...</strong>
+         <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Yes</button>
+           <button type="button" class="btn btn-default" data-dismiss="modal">No</button>
+        </div>
+        </div>
+      
+        </div>
+
+</div>
+  </div>
+       <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="js/bootstrap.min.js"></script>
